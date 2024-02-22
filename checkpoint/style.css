@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.myNav {
+  position: fixed;
+  width: 100%;
+  background-color: #00000042;
+  height: 80px;
+  line-height: 50px;
+}
+
+.myNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.myNav ul li {
+  display: inline;
+  padding: 5%;
+}
+
+.myNav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 16px;
+}
+
+#myImage {
+  width: 100%;
+  height: 100vh;
+}
+
+p {
+  background-color: black;
+  /* height: 100px; */
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+ol {
+  list-style: none;
+}
+
+#contact {
+  margin: 20px;
+  padding: 16px;
+}
+
+#contact > input, label, button {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  background-color: pink;
+  margin: 5px 0 20px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 50%;
+  margin: auto;
+  /* margin-left: 25%; */
+  background-color: green;
+  border-radius: 5px;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: brown;
+  color: black;
+}
