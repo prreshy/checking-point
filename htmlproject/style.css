@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:;
+    
+}
+
+/* .container{
+    min-width: 1440px;
+    min-height: 100vh;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* margin:20px 0px; */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 10vh;
+    z-index: 2;
+   background-color: #18080d;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    /* position: relative; */
+    gap: 12px;
+    margin-top: 15px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+nav ul li dl{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    height:  15vh;
+    padding: 20px;
+    margin-top: 20px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    display: none;
+    transition: 1s;
+    color: black;
+    background-color: white;
+}
+
+dd{
+    font-size: 14px;
+    color: grey;
+}
+.dla{
+    color: black;
+}
+
+.second-dt{
+    margin-top: 20px;
+}
+
+.thelist{
+
+    height: 40px;
+}
+
+
+nav ul .thelist:hover dl{
+    display: flex;
+    
+}
+
+nav ul .thelist:hover .link{
+    color: rgba(49, 46, 46, 0.729);
+}
+
+header{
+    position: relative;
+   height: 100vh;
+   width: 100%;
+   margin-top: 90px;
+   z-index: 1;
+   background-color: #151010;
+}
+
+.header-desc{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+header h1{
+    font-size: 100px;
+    background-image: url(./images/istockphoto-1499410369-2048x2048\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 30%;
+
+}
+
+.icons ul{
+    list-style: none;
+
+}
+
+.icons ul li{
+    background-color: white;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.circle{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #18080d;
+    clip-path: circle(50% at right 100%);
+}
+
+.icons ul li:hover{
+   transform: scale(1.4);
+   transform: translateX(-50%);
+}
+
+.form{
+    margin-top: 70px; 
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+    background-color: white;
+
+}
+
+input{
+    display: block;
+    border: none;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #adadad;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.form h2{
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+    padding: 20px;
+    background-image: url(./images/programming-1857236_1280.jpg);
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+
+}
+
+form{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+label{
+    font-size: 14px;
+    color: #adadad;
+    position: absolute;
+    transition: 1s;
+    transform: translateY(-100%);
+}
+
+.input3 input:focus ~ label{
+    top: -10px;
+
+}
+
+.input3 label{
+    top: 0;
+}
+
+.input3{
+    position: relative;
+}
+
+.button1{
+display: block;
+width: 100%;
+border-radius: 20px;
+padding: 10px;
+color: white;
+background-color: #2691d9;
+font-weight: bold;
+border: none;
+margin-bottom: 20px;
+cursor: pointer;
+}
+
+span a{
+    color: #adadad;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.extra{
+    width: 100%;
+    margin-left: 25%;
+}
+
+.extra span{
+    color: #666666;
+}
+
+.extra a{
+    color: rgb(8, 85, 251);
+    text-decoration: none;
+    color: #2691d9;
+}
+
+.gridp{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+
+
+.gridc{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #251f1f;
+    /* color: white; */
+    justify-content: center;
+    padding: 20px;    
+}
+
+.part{
+    /* background-color: #151010; */
+    color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+   
+}
+
+.gridc i{
+    margin-bottom: 20px;
+}
+
+.gridc h3{
+    margin-bottom: 20px;
+
+}
+
+.gridc p{
+    margin-bottom: 20px;
+    color: #adadad;
+    /* margin-top: 50px; */
+}
+
+.desc1{
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+    
+}
+
+footer{
+    background-color: #111;
+}
+
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+.socialicons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialicons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialicons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerbottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerbottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
